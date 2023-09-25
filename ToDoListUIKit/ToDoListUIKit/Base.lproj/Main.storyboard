@@ -20,6 +20,42 @@
                                 <rect key="frame" x="0.0" y="145" width="393" height="707"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checked cell" id="dh2-90-sbY" customClass="CheckTableViewCell" customModule="ToDoListUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="42.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dh2-90-sbY" id="EDD-cx-13I">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="42.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77V-B4-zKx">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="42" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w92-P9-gVk" customClass="Checkbox" customModule="ToDoListUIKit" customModuleProvider="target">
+                                                    <rect key="frame" x="358.66666666666669" y="11.333333333333334" width="19.333333333333314" height="20.333333333333329"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <connections>
+                                                        <action selector="checked:" destination="dh2-90-sbY" eventType="valueChanged" id="HFc-Mu-Pwn"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="w92-P9-gVk" firstAttribute="centerY" secondItem="77V-B4-zKx" secondAttribute="centerY" id="2qK-IS-YIb"/>
+                                                <constraint firstAttribute="trailing" secondItem="w92-P9-gVk" secondAttribute="trailing" constant="15" id="5zs-ww-2n8"/>
+                                                <constraint firstItem="77V-B4-zKx" firstAttribute="leading" secondItem="EDD-cx-13I" secondAttribute="leadingMargin" id="a4y-93-Ezl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="77V-B4-zKx" secondAttribute="bottom" id="axn-79-yvR"/>
+                                                <constraint firstItem="77V-B4-zKx" firstAttribute="top" secondItem="EDD-cx-13I" secondAttribute="topMargin" id="itX-jC-316"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkBox" destination="w92-P9-gVk" id="je2-8J-ypG"/>
+                                            <outlet property="label" destination="77V-B4-zKx" id="WvN-Yk-siy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="LEi-Kj-PdJ"/>
                                 </connections>

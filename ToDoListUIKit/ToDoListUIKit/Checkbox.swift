@@ -7,6 +7,7 @@
 
 import UIKit
 
+@IBDesignable
 class Checkbox: UIControl {
 
     private weak var imageView: UIImageView!

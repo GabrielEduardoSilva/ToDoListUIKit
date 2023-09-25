@@ -15,6 +15,7 @@
 		D30B8B0B2AC1C30000A97F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30B8B092AC1C30000A97F4F /* LaunchScreen.storyboard */; };
 		D30B8B132AC1C38700A97F4F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B8B122AC1C38700A97F4F /* ToDo.swift */; };
 		D30B8B152AC1F72600A97F4F /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B8B142AC1F72600A97F4F /* Checkbox.swift */; };
+		D30B8B172AC2027E00A97F4F /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B8B162AC2027E00A97F4F /* CheckTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D30B8B0C2AC1C30000A97F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30B8B122AC1C38700A97F4F /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		D30B8B142AC1F72600A97F4F /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		D30B8B162AC2027E00A97F4F /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				D30B8B022AC1C2FF00A97F4F /* ViewController.swift */,
 				D30B8B122AC1C38700A97F4F /* ToDo.swift */,
 				D30B8B142AC1F72600A97F4F /* Checkbox.swift */,
+				D30B8B162AC2027E00A97F4F /* CheckTableViewCell.swift */,
 				D30B8B042AC1C2FF00A97F4F /* Main.storyboard */,
 				D30B8B072AC1C30000A97F4F /* Assets.xcassets */,
 				D30B8B092AC1C30000A97F4F /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30B8B172AC2027E00A97F4F /* CheckTableViewCell.swift in Sources */,
 				D30B8B032AC1C2FF00A97F4F /* ViewController.swift in Sources */,
 				D30B8AFF2AC1C2FF00A97F4F /* AppDelegate.swift in Sources */,
 				D30B8B012AC1C2FF00A97F4F /* SceneDelegate.swift in Sources */,
