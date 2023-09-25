@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     let todos = [
     Todo(title: "Make vanilla pudding."),
-    Todo(title: "Put pudding in a mayo jarl"),
+    Todo(title: "Put pudding in a mayo jarl."),
     Todo(title: "Eat it in a public place."),
     ]
     
@@ -25,13 +25,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return todos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        cell.textLabel!.text = "Teste"
+        let todo = todos[indexPath.row]
+        cell.textLabel!.text = todo.title
         
         return cell
     }
